@@ -2,37 +2,31 @@
 
 ## Short Description
 
-Racist ‘blacklivesmatter’?
-: A text analysis on tweets about blacklivesmatter and alllivesmatter 
+A text analysis on tweets about blacklivesmatter and whitelivesmatter 
 
-There arise many counter-statements such as white lives matter against black lives matter and male lives matter against female lives matter. This reddit page called the red pill is the exemplary of male lives matter group. They argue that they live in a culture increasingly lacking a positive identity for men in a very anti-feminist way. These statements caught me because they argue “universal” formulation against those emphasize the traditionally underprivileged groups.
+There arise many counter-statements such as white lives matter against black lives matter and male lives matter against female lives matter. (cf. The reddit page called the red pill is the exemplary of male lives matter group. They argue that they live in a culture increasingly lacking a positive identity for men in a very anti-feminist way.) These statements caught me because they argue “universal” formulations against the argument for the underprivileged groups. 
+
 
 ## Dependencies
 
-List what software your code depends on, as well as version numbers, like so:.
+R, version 3.3.1
+Python, version 3, Anaconda distribution.
 
-R, version 3.1
-Python, version 2.7, Anaconda distribution.
-(In your scripts, includes commands that install required packages.)
 
 ## Files
 
-
 ### Data
 
-polity.csv: The PolityVI dataset, available here: http://www.systemicpeace.org/inscrdata.html
+Two csv files converted from Twitter using TwitterSearch library
+November 20th 2016 - November 26th 2016
+blacklivesmatter.csv: 8100 user IDs(user) and tweets(text)
+whitelivesmatter.csv: 2846 user IDs(user) and tweets(text)
 
-nyt.csv: Contains data from the New York Times API collected via collect-nyt.ipynb . Includes information on all articles containing the term "Programmer Cat", 1980-2010.
-
-analysis-dataset.csv: The final Analysis Dataset derived from the raw data above. It includes country-year values for all UN countries 1980-2010, with observations for the following variables:
-
-ccode: Correlates of War numeric code for country observation
-year: Year of observation
-polity: PolityVI score
-nyt: Number of New York Times articles about "Programmer Cat"
+cf. vacationlocation.csv: I tried to get location infos of blacklivesmatter and whitelivesmatter, but got no infos back with these keywords. The keyword 'vacaton' gave me 18 locations out of 2000 tweets. (I guess people do not share their location infos, which is optional in Twitter, as much as they do in other SNS platforms. But it might be helpful for those who want to analyze the Twitter location infos available.)
 
 ### Code
 
+(In your scripts, includes commands that install required packages.)
 01_collect-nyt.py: Collects data from New York Times API and exports data to the file nyt.csv
 02_merge-data.R: Loads, cleans, and merges the raw Polity and NYT datasets into the Analysis Dataset.
 03_analysis.R: Conducts descriptive analysis of the data, producing the tables and visualizations found in the Results directory.
