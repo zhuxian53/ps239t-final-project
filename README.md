@@ -2,7 +2,10 @@
 
 ## Short Description
 
-Give a short, 1-2 paragraph description of your project. Focus on the code, not the theoretical / substantive / academic side of things.
+Racist ‘blacklivesmatter’?
+: A text analysis on tweets about blacklivesmatter and alllivesmatter 
+
+There arise many counter-statements such as white lives matter against black lives matter and male lives matter against female lives matter. This reddit page called the red pill is the exemplary of male lives matter group. They argue that they live in a culture increasingly lacking a positive identity for men in a very anti-feminist way. These statements caught me because they argue “universal” formulation against those emphasize the traditionally underprivileged groups.
 
 ## Dependencies
 
@@ -14,7 +17,6 @@ Python, version 2.7, Anaconda distribution.
 
 ## Files
 
-List all other files contained in the repo, along with a brief description of each one, like so:
 
 ### Data
 
