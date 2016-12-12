@@ -27,7 +27,7 @@ whitelivesmatter.csv: 2846 user IDs(user) and tweets(text)
 cf. vacationlocation.csv: I tried to get location infos of blacklivesmatter and whitelivesmatter, but got no infos back with these keywords. The keyword 'vacaton' gave me 18 locations out of 2000 tweets. (I guess people do not share their location infos as much as they do in other SNS platforms. But this file/code might be helpful for those who want to analyze the (Twitter) location infos available.)
 
 
-### Code
+### Codes
 
 1-Tweet to csv.ipynb: Collects data about 'blacklivesmatter'/'whitelivesmatter' from Twitter API and exports data to the csv files.
 
