@@ -2,9 +2,7 @@
 
 ## Short Description
 
-A text analysis on tweets about blacklivesmatter and whitelivesmatter 
-
-There arise many counter-statements such as white lives matter against black lives matter and male lives matter against female lives matter. (cf. The reddit page called the red pill is the exemplary of male lives matter group. They argue that they live in a culture increasingly lacking a positive identity for men in a very anti-feminist way.) These statements caught me because they argue “universal” formulations against the argument for the underprivileged groups. 
+There arise many counter-statements such as white lives matter against black lives matter. These statements caught me because they argue “universal” formulations against the arguments for the underprivileged groups. Text analysis of word frequency, discriminating word, sentiment, and the location information of two statements will reveal us how different/similar their word usages are. I am conducting a text analysis on tweets about blacklivesmatter and whitelivesmatter.  
 
 
 ## Dependencies
