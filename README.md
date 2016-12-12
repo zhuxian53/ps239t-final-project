@@ -51,19 +51,19 @@ cf. vacationlocation.csv: I tried to get location infos of blacklivesmatter and 
 
 ### Results
 
-blm_wordcloud.jpeg
+blm_wordcloud.jpeg: Plots the most frequent words in the Tweets of 'blacklivesmatter'
 
-wlm_wordcloud.jpeg
+wlm_wordcloud.jpeg: Plots the most frequent words in the Tweets of 'whitelivesmatter'
 
-discriminating1.jpeg
+discriminating1.jpeg: Shows the words with highest difference
 
 discriminating2.jpeg
 
-blm_sentiment.jpeg
+blm_sentiment.jpeg: Plots the polarizing sentiments used in the Tweets of 'blacklivesmatter'
 
-wlm_sentiment.jpeg
+wlm_sentiment.jpeg: Plots the polarizing sentiments used in the Tweets of 'whitelivesmatter'
 
-vacation_location.jpeg
+vacation_location.jpeg: Plots the Twitterers who used the word of 'vacation' over the countries. 
 
 coverage-over-time.jpeg: Graphs the number of articles about each region over time.
 regression-table.txt: Summarizes the results of OLS regression, modelling nyt on a number of covariates.
