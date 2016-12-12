@@ -28,26 +28,23 @@ whitelivesmatter.csv: 2846 user IDs(user) and tweets(text)
 
 cf. vacationlocation.csv: I tried to get location infos of blacklivesmatter and whitelivesmatter, but got no infos back with these keywords. The keyword 'vacaton' gave me 18 locations out of 2000 tweets. (I guess people do not share their location infos, which is optional in Twitter, as much as they do in other SNS platforms. But it might be helpful for those who want to analyze the (Twitter) location infos available.)
 
+
 ### Code
 
-1-Tweet to csv.ipynb
+1-Tweet to csv.ipynb: Collects data about 'blacklivesmatter'/'whitelivesmatter' from Twitter API and exports data to the csv files.
 
-2-Pre-processing.Rmd
+2-Pre-processing.Rmd: Loads and cleans the raw Twitter datasets into the Analysis Dataset.
 
-3-Wordclouds.Rmd
+3-Wordclouds.Rmd: Produces wordclouds of data 
 
-4-Discriminating.Rmd
+4-Discriminating.Rmd: Conducts analysis of the discriminating words between 'blacklivesmatter' and 'whitelivesmatter' data
 
-5-Sentiment.Rmd
+5-Sentiment.Rmd: Conducts sentiment analysis of the data
 
-6.1-Vacation_location to csv.ipynb
+6.1-Vacation_location to csv.ipynb: Collects location data about 'vacation' from Twitter API and exports data to the csv files.
 
-6.2-Vacation_location_Rlot.Rmd
+6.2-Vacation_location_Rplot.Rmd: Produces visualization of location data about 'vacation' from Twitter API on the world map. 
 
-(In your scripts, includes commands that install required packages.)
-01_collect-nyt.py: Collects data from New York Times API and exports data to the file nyt.csv
-02_merge-data.R: Loads, cleans, and merges the raw Polity and NYT datasets into the Analysis Dataset.
-03_analysis.R: Conducts descriptive analysis of the data, producing the tables and visualizations found in the Results directory.
 
 ### Results
 
