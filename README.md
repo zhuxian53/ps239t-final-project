@@ -6,7 +6,7 @@ There arise many counter-statements such as white lives matter against black liv
 
 ## Dependencies
 - R, version 3.3.1
-- Python, version 3, Anaconda distribution.
+- Python, version 3, Anaconda distribution
 
 
 ## Files
