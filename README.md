@@ -36,4 +36,5 @@ cf. vacation.csv: I tried to get the location infos of blacklivesmatter and whit
 - vacation_location.jpeg: Plots the locations of the Tweets of 'vacation'
 
 ## More Information
+blm = "blacklivesmatter", wlm = "whitelivesmatter"
 - contact info: Joohyun Park, jp53@berkeley.edu
