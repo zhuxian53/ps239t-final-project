@@ -18,15 +18,31 @@ Python, version 3, Anaconda distribution.
 
 ### Data
 
-Two csv files converted from Twitter using TwitterSearch library
+Two csv files exported from Twitter with TwitterSearch library
+
 November 20th 2016 - November 26th 2016
 
 blacklivesmatter.csv: 8100 user IDs(user) and tweets(text)
+
 whitelivesmatter.csv: 2846 user IDs(user) and tweets(text)
 
 cf. vacationlocation.csv: I tried to get location infos of blacklivesmatter and whitelivesmatter, but got no infos back with these keywords. The keyword 'vacaton' gave me 18 locations out of 2000 tweets. (I guess people do not share their location infos, which is optional in Twitter, as much as they do in other SNS platforms. But it might be helpful for those who want to analyze the (Twitter) location infos available.)
 
 ### Code
+
+1-Tweet to csv.ipynb
+
+2-Pre-processing.Rmd
+
+3-Wordclouds.Rmd
+
+4-Discriminating.Rmd
+
+5-Sentiment.Rmd
+
+6.1-Vacation_location to csv.ipynb
+
+6.2-Vacation_location_Rlot.Rmd
 
 (In your scripts, includes commands that install required packages.)
 01_collect-nyt.py: Collects data from New York Times API and exports data to the file nyt.csv
@@ -34,6 +50,20 @@ cf. vacationlocation.csv: I tried to get location infos of blacklivesmatter and 
 03_analysis.R: Conducts descriptive analysis of the data, producing the tables and visualizations found in the Results directory.
 
 ### Results
+
+blm_wordcloud.jpeg
+
+wlm_wordcloud.jpeg
+
+discriminating1.jpeg
+
+discriminating2.jpeg
+
+blm_sentiment.jpeg
+
+wlm_sentiment.jpeg
+
+vacation_location.jpeg
 
 coverage-over-time.jpeg: Graphs the number of articles about each region over time.
 regression-table.txt: Summarizes the results of OLS regression, modelling nyt on a number of covariates.
