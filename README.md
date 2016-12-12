@@ -68,4 +68,4 @@ vacation_location.jpeg: Plots the Twitterers who used the word of 'vacation' ove
 
 ## More Information
 
-contact info: jp53@berkeley.edu
+contact info: Joohyun Park, jp53@berkeley.edu
