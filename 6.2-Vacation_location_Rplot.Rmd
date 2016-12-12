@@ -1,0 +1,36 @@
+---
+title: "location"
+author: "Joohyun Park"
+date: "December 11, 2016"
+output: html_document
+---
+
+```{r}
+# set the working directory
+setwd("~/Desktop/PS239T/13_GeoSpatial")  
+```
+
+```{r}
+# installing spatial data packages
+x <- c("ggmap", "maptools","ggplot2", "maps")
+install.packages(x) 
+library(ggplot2)
+library(maps)
+```
+
+```{r}
+# retrieve a world map from the "maps" package
+world <- map_data("world")       
+# name it p1
+p1 <- ggplot(world, aes(x=long, y=lat)) +   
+              geom_path(aes(group=group)) 
+```
+                    
+```{r}
+# read the file you want to analyze
+dat <- read.csv("vacation.csv") # 
+
+# combine a world map and the location infos              
+p1 + geom_point(aes(x = long, y = lat), 
+                    colour = "red", data = dat, alpha = 1) 
+```
