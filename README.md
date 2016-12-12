@@ -11,8 +11,7 @@ There arise many counter-statements such as white lives matter against black liv
 
 ## Files
 ### Data
-Two csv files exported from Twitter with TwitterSearch library
-November 20th 2016 - November 26th 2016
+Two csv files exported from Twitter (November 20th 2016 - November 26th 2016) with TwitterSearch library
 - blacklivesmatter.csv: 8100 user IDs(user) and tweets(text)
 - whitelivesmatter.csv: 2846 user IDs(user) and tweets(text)
 
