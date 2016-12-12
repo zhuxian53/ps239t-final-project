@@ -70,4 +70,4 @@ regression-table.txt: Summarizes the results of OLS regression, modelling nyt on
 
 ## More Information
 
-Include any other details you think your user might need to reproduce your results. You may also include other information such as your contact information, credits, etc.
+contact info: jp53@berkeley.edu
