@@ -1,0 +1,42 @@
+---
+title: "Sentiment Analysis"
+author: "Joohyun Park" - "following Rochelle Terman's codes"
+date: "December 11, 2016"
+output: html_document
+---
+
+### Required Packages
+
+```{r}
+# set the working directory and remove all lists
+rm(list=ls())
+setwd("~/Desktop/PS239T/12_text-analysis")
+
+# install required packages
+library(ggplot2) # plotting discourse data
+library(qdap) # quantiative discourse analysis of transcripts
+library(data.table) # for easier data manipulation
+library(scales) # to help us plot
+```
+
+
+```{r}
+# load data
+black <- read.csv("blacklivesmatter2.csv")
+
+# see a truncated version of the data
+head(truncdf(black),10)
+
+# split the data into sentences 
+black.split <- sentSplit(black, "text")
+```
+
+The `qdap` package calculates how "positive" or "negative" text is with 'polarity' function
+
+```{r}
+# calculate polarity
+(poldat <- with(black.split, polarity(text, user)))
+
+# plot the polarity
+plot(poldat)
+```

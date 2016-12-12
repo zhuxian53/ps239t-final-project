@@ -1,0 +1,88 @@
+---
+title: "Discriminating Words"
+author: "Joohyun Park" - "following Rochelle Terman's codes"
+date: "December 11, 2016"
+output: html_document
+---
+
+### Required Packages
+
+```{r}
+# set the working directory
+setwd("~/Desktop/PS239T/12_text-analysis")
+# remove all lists
+rm(list=ls())
+# install required packages
+library(tm)
+library(RTextTools) # a machine learning package for text classification written in R
+library(SnowballC) # for stemming
+library(matrixStats) # for statistics
+```
+
+```{r}
+# read a corpus from a directory "blmwlm"
+docs <- Corpus(DirSource("blmwlm"))
+
+dtm <- DocumentTermMatrix(docs, # convert the text to unigrams, create a DTM
+           control = list(tolower = TRUE, # Convert all characters to lowercase
+                          removePunctuation = TRUE, # Remove punctuation
+                          removeNumbers = TRUE, # Remove numbers
+                          stopwords = TRUE, # Remove Stop Words
+                          stemming=TRUE)) # Stemming words
+```
+
+### 1. Prepare a dataframe
+
+```{r}
+# turn DTM into dataframe
+dtm.m <- as.data.frame(as.matrix(dtm))
+dtm.m[,1:5]
+
+# Subset into 2 DTMs for each document
+blm <- dtm.m[1,]
+wlm <- dtm.m[2,]
+
+# Sum word usage counts across all documents
+blm <- colSums(blm)
+wlm <- colSums(wlm)
+
+# Put those sums back into a dataframe
+df <- data.frame(rbind(blm,wlm))
+
+# subset df with non-zero entries
+df <- df[,wlm>0 & blm>0]
+```
+
+### 2. Words with the highest absolute differences
+
+Compare the average rate at which a document use a word. 
+
+```{r}
+# normalize into proportions
+rowTotals <- rowSums(df) #create column with row totals, total number of words per document
+df <- df/rowTotals #change frequencies to proportions
+
+# get difference in proportions
+means.blm <- df[1,]
+means.wlm <- df[2,]
+# take the difference between one document's proportion of a word and another's proportion of the same word.
+score <- unlist(means.blm - means.wlm)
+
+# find words with highest difference
+score <- sort(score)
+head(score,10) # top wlm words
+tail(score,10) # top blm words
+```
+
+### 3. Words with the highest absolute differences / Averate rate across the documents
+
+```{r]}
+# get the means of two documents
+means.all <- colMeans(df)
+
+# divide the differences by averate rate across the documents
+score <- unlist((means.blm - means.wlm) / means.all)
+score <- sort(score)
+head(score,10) # top wlm words
+tail(score,10) # top blm words
+```

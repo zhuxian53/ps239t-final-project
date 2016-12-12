@@ -1,0 +1,51 @@
+---
+title: "Pre-processing"
+author: "Joohyun Park" - "following Rochelle Terman's codes"
+date: "December 11, 2016"
+output: html_document
+---
+
+### Required Pakcages
+
+```{r}
+# set the working directory
+setwd("~/Desktop/PS239T/12_text-analysis")
+
+# remove all lists
+rm(list=ls())
+
+# install required packages
+require(tm) # Framework for text mining
+require(ggplot2) # for plotting word frequencies
+require(dplyr)
+require(RTextTools) # a machine learning package for text classification written in R
+require(qdap) # Quantiative discourse analysis of transcripts
+require(qdapDictionaries)
+require(SnowballC) # for stemming
+```
+
+## 1. Prepare a Corpus
+
+### 1.1 Corpus Sources and Readers
+
+```{r}
+# get 'tm' package
+getSources()
+getReaders()
+
+# read a corpus from a directory "blmwlm"
+docs <- Corpus(DirSource("blmwlm")) 
+```
+
+### 1.2 Preprocessing
+
+```{r}
+
+dtm <- DocumentTermMatrix(docs, # convert the text to unigrams, create a DTM
+           control = list(tolower = TRUE, # Convert all characters to lowercase
+                          removePunctuation = TRUE, # Remove punctuation
+                          removeNumbers = TRUE, # Remove numbers
+                          stopwords = TRUE, # Remove Stop Words
+                          stemming=TRUE)) # Stemming words
+```
+
