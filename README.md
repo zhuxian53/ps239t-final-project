@@ -19,11 +19,11 @@ November 20th 2016 - November 26th 2016
 cf. vacationlocation.csv: I tried to get location infos of blacklivesmatter and whitelivesmatter, but got no infos back with these keywords. The keyword 'vacaton' gave me 18 locations out of 2000 tweets. (I guess people do not share their location infos as much as they do in other SNS platforms. But this file/code might be helpful for those who want to analyze the (Twitter) location infos available.)
 
 ### Codes
-- 1-Tweet to csv.ipynb: Collects data about 'blacklivesmatter'/'whitelivesmatter' from Twitter API and exports data to the csv files.
+- 1-Tweet to csv.ipynb: Collects data of 'blacklivesmatter'/'whitelivesmatter' from Twitter API and exports data to the csv files.
 - 2-Pre-processing.Rmd: Loads and cleans the raw Twitter datasets into the Analysis Dataset.
-- 3-Wordclouds.Rmd: Produces wordclouds of data 
-- 4-Discriminating.Rmd: Conducts analysis of the discriminating words between 'blacklivesmatter' and 'whitelivesmatter' data
-- 5-Sentiment.Rmd: Conducts sentiment analysis of the data
+- 3-Wordclouds.Rmd: Produces wordclouds of data. 
+- 4-Discriminating.Rmd: Conducts analysis of the discriminating words between 'blacklivesmatter' and 'whitelivesmatter' data.
+- 5-Sentiment.Rmd: Conducts sentiment analysis of the data.
 - 6.1-Vacation_location to csv.ipynb: Collects location data about 'vacation' from Twitter API and exports data to the csv files.
 - 6.2-Vacation_location_Rplot.Rmd: Produces visualization of location data about 'vacation' from Twitter API on the world map. 
 
