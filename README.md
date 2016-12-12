@@ -22,7 +22,6 @@ Two csv files converted from Twitter using TwitterSearch library
 November 20th 2016 - November 26th 2016
 
 blacklivesmatter.csv: 8100 user IDs(user) and tweets(text)
-
 whitelivesmatter.csv: 2846 user IDs(user) and tweets(text)
 
 cf. vacationlocation.csv: I tried to get location infos of blacklivesmatter and whitelivesmatter, but got no infos back with these keywords. The keyword 'vacaton' gave me 18 locations out of 2000 tweets. (I guess people do not share their location infos, which is optional in Twitter, as much as they do in other SNS platforms. But it might be helpful for those who want to analyze the (Twitter) location infos available.)
