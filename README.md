@@ -34,7 +34,7 @@ cf. vacationlocation.csv: I tried to get location infos of blacklivesmatter and 
 - discriminating2.jpeg: Shows the words with highest difference in average rates per documents by the average rate across all documents
 - blm_sentiment.jpeg: Plots the polarizing sentiments used in the Tweets of 'blacklivesmatter'
 - wlm_sentiment.jpeg: Plots the polarizing sentiments used in the Tweets of 'whitelivesmatter'
-- vacation_location.jpeg: Plots the Twitterers who used the word of 'vacation' over the countries. 
+- vacation_location.jpeg: Plots the locations of the Tweets of 'vacation'
 
 ## More Information
 - contact info: Joohyun Park, jp53@berkeley.edu
