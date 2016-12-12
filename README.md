@@ -55,9 +55,9 @@ blm_wordcloud.jpeg: Plots the most frequent words in the Tweets of 'blacklivesma
 
 wlm_wordcloud.jpeg: Plots the most frequent words in the Tweets of 'whitelivesmatter'
 
-discriminating1.jpeg: Shows the words with highest difference
+discriminating1.jpeg: Shows the words with highest difference in average rates per documents
 
-discriminating2.jpeg
+discriminating2.jpeg: Shows the words with highest difference in average rates per documents by the average rate across all documents
 
 blm_sentiment.jpeg: Plots the polarizing sentiments used in the Tweets of 'blacklivesmatter'
 
@@ -65,8 +65,6 @@ wlm_sentiment.jpeg: Plots the polarizing sentiments used in the Tweets of 'white
 
 vacation_location.jpeg: Plots the Twitterers who used the word of 'vacation' over the countries. 
 
-coverage-over-time.jpeg: Graphs the number of articles about each region over time.
-regression-table.txt: Summarizes the results of OLS regression, modelling nyt on a number of covariates.
 
 ## More Information
 
