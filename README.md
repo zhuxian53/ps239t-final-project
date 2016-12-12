@@ -1,7 +1,7 @@
 # ps239t-final-project
 
 ## Short Description
-There arise many counter-statements such as white lives matter against black lives matter. These statements are interesting because they argue “universal” formulations against the arguments for the underprivileged groups. Text analysis of word frequency, discriminating word, and sentiment, and geospatial analysis of two statements will reveal us how different/similar their word usages are. I am conducting a text analysis on tweets about blacklivesmatter and whitelivesmatter.  
+There arise many counter-statements such as white lives matter against black lives matter. These statements are interesting because they argue “universal” formulations rather than empower the underprivileged. Text analysis of word frequency, discriminating word, and sentiment, and geospatial analysis of two statements will reveal us how different/similar their word usages are. I am conducting a text analysis on tweets about blacklivesmatter and whitelivesmatter.  
 
 
 ## Dependencies
